@@ -2,5 +2,8 @@
 .env
 
 # IDE specific files
-.idea/
-.vscode/
+idea/
+vscode/
+
+# js specific files
+
