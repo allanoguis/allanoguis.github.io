@@ -15,7 +15,7 @@ body {
     font-family: var(--body-font-family);
     min-height: 100vh;
     background-image: url('../assets/bg/bg02.jpg');
-    background-color: #000;
+    background-color: black;
     background-size: contain;
     background-position: center;
     backdrop-filter: invert(90%) blur(1px);
@@ -62,7 +62,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: opacity(60%) saturate(1.25);
+    filter: opacity(78%) saturate(1.27);
     border-radius: 10px;
 }
 
@@ -110,12 +110,14 @@ body {
     line-height: 0;
     text-transform: uppercase;
     color: var(--h1-color);
-    mix-blend-mode:exclusion;
+    mix-blend-mode: exclusion;
     z-index: 2;
     animation: glitch 900ms ease infinite 3s alternate-reverse;
 }
 
-h1 { --glitch-translate: 23px; }
+h1 {
+    --glitch-translate: 23px;
+}
 
 @keyframes glitch {
     0% {
@@ -133,18 +135,21 @@ h1 { --glitch-translate: 23px; }
         transform: none;
     }
 }
+
 @media (max-width: 500px) {
-.stack {
-    height: 25vh;
-    margin: 0;
-    padding: 0;
-}
-.stack h1 {
-    margin: 0;
-    padding-left: 0;
+    .stack {
+        height: 25vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stack h1 {
+        margin: 0;
+        padding-left: 0;
         font-size: 5rem;
     }
 }
+
 footer {
     display: block;
     position: fixed;
