@@ -9,6 +9,9 @@
 }
 
 body {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
     font-family: var(--body-font-family);
     min-height: 100vh;
     background-image: url('../assets/bg/bg02.jpg');
@@ -17,9 +20,6 @@ body {
     background-position: center;
     backdrop-filter: invert(90%) blur(1px);
     margin: 0;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
 }
 
 .banner {
@@ -133,7 +133,18 @@ h1 { --glitch-translate: 23px; }
         transform: none;
     }
 }
-
+@media (max-width: 500px) {
+.stack {
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+}
+.stack h1 {
+    margin: 0;
+    padding-left: 0;
+        font-size: 5rem;
+    }
+}
 footer {
     display: block;
     position: fixed;
