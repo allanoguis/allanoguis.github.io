@@ -1,122 +1,157 @@
 @charset "UTF-8";
 @import url('https://fonts.cdnfonts.com/css/upheaval');
+
 :root {
-    --bs-body-font-family: "Upheaval TT (BRK)", sans-serif, "Staatliches", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --body-font-family: "Upheaval TT (BRK)", sans-serif, "Staatliches", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --h1-color: #e5ff00;
+    --gr-color: red;
+    --gb-color: blue;
 }
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+
 body {
-    font-family: var(--bs-body-font-family);
+    font-family: var(--body-font-family);
     min-height: 100vh;
     background-image: url('../assets/bg/bg02.jpg');
     background-color: #000;
-    background-size:contain;
+    background-size: contain;
     background-position: center;
     backdrop-filter: invert(90%) blur(1px);
     margin: 0;
     display: flex;
     align-items: center;
-    overflow: hidden;   
+    overflow: hidden;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 100vh;
-    text-align:center;
-    overflow:hidden;
+    text-align: center;
+    overflow: hidden;
     position: relative;
 }
+
 .banner .slider {
     position: absolute;
     width: 200px;
     height: 250px;
-    top:10%;
+    top: 10%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     animation: autoRun 40s infinite linear;
-    z-index: 1000;
+    z-index: 1;
 }
-@keyframes autoRun{
-    from{
-        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-    }to{
-        transform: perspective(1000px) rotateX(-16deg) rotateY(-360deg);
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-14deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(-14deg) rotateY(-360deg);
     }
 }
-.banner .slider .item{
+
+.banner .slider .item {
     position: absolute;
     inset: 0 0 0 0;
-    transform: 
-    rotateY(calc((var(--x) - 1) * (360deg / var(--q)) + 1deg)) 
-    translateZ(600px);
+    transform:
+        rotateY(calc((var(--i) - 1) * (360deg / var(--q)) + 1deg)) translateZ(600px);
 }
-.banner .slider .item img{
+
+.banner .slider .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter:opacity(60%) saturate(1.25);
+    filter: opacity(60%) saturate(1.25);
     border-radius: 10px;
 }
-.banner .content{
+
+.banner .content {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: min(1400px, 100vw);
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
 }
-.banner .content h1{
-    transform: translateX(35%);
-    font-family: var(--bs-body-font-family);
-    font-size: 10em;
-    font-weight: lighter;
-    line-height: 1;
-    text-transform: uppercase;
-    color:#e20909;
-    mix-blend-mode:color-dodge;
-    z-index: 1000;
-}
-.banner .content .model{
+
+.banner .model {
     background-image: url(../assets/img/cyberman2.png);
     width: 100%;
     height: 85vh;
-    position:absolute;
+    position: absolute;
     bottom: 0;
-    left: 0;
     background-size: auto 130%;
     background-repeat: no-repeat;
     background-position: top center;
     filter: drop-shadow(0 0 70px rgba(0, 0, 0, 1));
-    z-index: 900;
+    z-index: 1;
 }
-footer{
-    background-color: #000;
-    opacity: 90%;
+
+.stack {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 3rem;
+    width: 100%;
+    height: 30vh;
+}
+
+.stack h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    font-weight: lighter;
+    line-height: 0;
+    text-transform: uppercase;
+    color: var(--h1-color);
+    mix-blend-mode:exclusion;
+    z-index: 2;
+    animation: glitch 900ms ease infinite 3s alternate-reverse;
+}
+
+h1 { --glitch-translate: 23px; }
+
+@keyframes glitch {
+    0% {
+        text-shadow: -3px 3px 0 var(--gr-color), 3px -3px 0 var(--gb-color);
+        transform: translate(var(--glitch-translate));
+    }
+
+    2% {
+        text-shadow: 3px -3px 0 var(--gr-color), -3px 3px 0 var(--gb-color);
+    }
+
+    4%,
+    100% {
+        text-shadow: none;
+        transform: none;
+    }
+}
+
+footer {
     display: block;
-    text-align: center;
-    color: #fff;
-    padding: 1.25rem 0;
     position: fixed;
     bottom: 0;
+    background-color: #000;
+    opacity: 90%;
+    color: #fff;
+    padding: 1.25rem 0;
     width: 100%;
-    z-index: 1000;
+    line-height: 1%;
+    height: 4%;
+    z-index: 2;
 }
-.copyright{   
-    font-size: 1.75rem;
+
+.copyright {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: lighter;
+    padding: 0;
 }
-
-
-
-
-
-
-
-
-
