@@ -122,23 +122,25 @@ h1 {
     color: var(--h1-color);
     mix-blend-mode: exclusion;
     z-index: 2;
-    animation: glitch 900ms ease infinite 3s alternate-reverse;
+    animation: glitch 900ms ease infinite 2000ms alternate-reverse;
 }
 
 h1 {
-    --x-translate: 15px;
+    --x: 15px;
+    --revx: -15px;
 }
 
 @keyframes glitch {
     0% {
         text-shadow: -3px 3px 0 var(--gr-color), 3px -3px 0 var(--gb-color);
-        transform: translate(var(--x-translate));
+        transform: translate(var(--x));
     }
     1% {
         text-shadow: 3px -3px 0 var(--gr-color), -3px 3px 0 var(--gb-color);
     }
     5%{
         text-shadow: 8px -8px 0 var(--gr-color), -8px 8px 0 var(--gb-color);
+        transform: translate(var(--revx));
     }
     6%,
     100% {
@@ -152,8 +154,8 @@ footer {
     position: absolute;
     align-items: center;
     justify-content: center;
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -179,6 +181,4 @@ footer {
             padding-left: 0;
             font-size: 4rem;
         }
-    
-
     }
