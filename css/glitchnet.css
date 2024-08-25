@@ -147,35 +147,38 @@ h1 {
     }
 }
 
-@media (max-width: 500px) {
-.banner .slider .item {
-    opacity: 20% !important;
-}
-h1 {
-        margin: 0;
-        padding-left: 0;
-        font-size: 4rem;
-    }
-}
-
 footer {
-    display: block;
+    display: flex;
     position: absolute;
-    bottom: 0;
+    align-items: center;
+    justify-content: center;
     background-color: #000;
-    opacity: 90%;
     color: #fff;
-    padding: 1.25rem 0;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    line-height: 1%;
-    height: 4%;
+    height: 50px;
+    bottom: 0;
     z-index: 2;
 }
 
 .copyright {
-    justify-content: center;
     text-align: center;
+    vertical-align: middle;
     font-size: 1.5rem;
     font-weight: lighter;
-    padding: 0;
 }
+
+@media (max-width: 500px) {
+    .banner .slider .item {
+        opacity: 20% !important;
+    }
+    
+    h1 {
+            margin: 0;
+            padding-left: 0;
+            font-size: 4rem;
+        }
+    
+
+    }
