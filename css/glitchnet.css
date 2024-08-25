@@ -6,7 +6,17 @@
     --h1-color: #e5ff00;
     --gr-color: red;
     --gb-color: blue;
-}
+    --model-background-image: url(../assets/img/cyberman2.png);
+    --model-width: 100%;
+    --model-height: 95vh;
+    --model-position: absolute;
+    --model-bottom: 0;
+    --model-background-size: auto 130%;
+    --model-background-repeat: no-repeat;
+    --model-background-position: top center;
+    --model-filter: drop-shadow(0 0 70px rgba(0, 0, 0, 1));
+    --model2-background-image: url(../assets/img/cyberman3.png);
+    }
 
 body {
     display: flex;
@@ -55,7 +65,7 @@ body {
     position: absolute;
     inset: 0 0 0 0;
     transform:
-        rotateY(calc((var(--i) - 1) * (360deg / var(--q)) + 1deg)) translateZ(600px);
+        rotateY(calc((var(--i) - 1) * (360deg / var(--q)) + 1deg)) translateZ(650px);
 }
 
 .banner .slider .item img {
@@ -66,32 +76,36 @@ body {
     border-radius: 10px;
 }
 
-.banner .content {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    justify-content: center;
-    align-items: center;
+.model {
+    background-image: var(--model-background-image);
+    width: var(--model-width);
+    height: var(--model-height);
+    position: var(--model-position);
+    bottom: var(--model-bottom);
+    background-size: var(--model-background-size);
+    background-repeat: var(--model-background-repeat);
+    background-position: var(--model-background-position);
+    filter: var(--model-filter);
+    z-index: 0;
 }
 
-.banner .model {
-    background-image: url(../assets/img/cyberman2.png);
-    width: 100%;
-    height: 85vh;
-    position: absolute;
-    bottom: 0;
-    background-size: auto 130%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    filter: drop-shadow(0 0 70px rgba(0, 0, 0, 1));
-    z-index: 1;
+.hair {
+    background-image: var(--model2-background-image);
+    width: var(--model-width);
+    height: var(--model-height);
+    position: var(--model-position);
+    bottom: var(--model-bottom);
+    background-size: var(--model-background-size);
+    background-repeat: var(--model-background-repeat);
+    background-position: var(--model-background-position);
+    filter: var(--model-filter);
+    z-index: 2;
 }
 
-.stack {
+h1 {
+    position: absolute;
+    bottom: 10rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -99,10 +113,6 @@ body {
     margin: 0;
     padding-left: 3rem;
     width: 100%;
-    height: 30vh;
-}
-
-.stack h1 {
     margin: 0;
     padding: 0;
     font-size: 10em;
@@ -116,20 +126,21 @@ body {
 }
 
 h1 {
-    --glitch-translate: 23px;
+    --x-translate: 15px;
 }
 
 @keyframes glitch {
     0% {
         text-shadow: -3px 3px 0 var(--gr-color), 3px -3px 0 var(--gb-color);
-        transform: translate(var(--glitch-translate));
+        transform: translate(var(--x-translate));
     }
-
-    2% {
+    1% {
         text-shadow: 3px -3px 0 var(--gr-color), -3px 3px 0 var(--gb-color);
     }
-
-    4%,
+    5%{
+        text-shadow: 8px -8px 0 var(--gr-color), -8px 8px 0 var(--gb-color);
+    }
+    6%,
     100% {
         text-shadow: none;
         transform: none;
@@ -137,13 +148,7 @@ h1 {
 }
 
 @media (max-width: 500px) {
-    .stack {
-        height: 25vh;
-        margin: 0;
-        padding: 0;
-    }
-
-    .stack h1 {
+h1 {
         margin: 0;
         padding-left: 0;
         font-size: 5rem;
@@ -152,7 +157,7 @@ h1 {
 
 footer {
     display: block;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     background-color: #000;
     opacity: 90%;
