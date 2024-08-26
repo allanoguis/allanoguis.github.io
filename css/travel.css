@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url("https://fonts.cdnfonts.com/css/roboto-flex");
+@import url('https://fonts.cdnfonts.com/css/montserrat-subrayada');
+
+
+:root {
+  --root-font-family: 'Montserrat Subrayada', 'Roboto Flex', sans-serif;
+  --root-font-family2: 'Roboto Flex', 'Montserrat Subrayada', sans-serif;
+  --a-text-color: white;
+  --card-background-color: blue;
+  --card-item-background-color: green;
+  --footer-background-color: #0bfcd4;
+  --box-aspect-ratio: 1;
+  --rectangle-aspect-ratio: 16 / 9;
+  --rectangle-vertical-aspect-ratio: 0.5;
+  --card-aspect-ratio: 1 / 0.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(0, 0, 0, 0.30);
+  color: var(--nav-link-color);
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+nav .flex-item-left {
+  display: flex;
+  flex: 25%;
+  justify-content: space-evenly;
+  gap: 1.2em;
+  padding: 0;
+  margin: 0 2.5em;
+}
+
+nav .login {
+  display: flex;
+  flex: 50%;
+  flex-direction: row-reverse;
+  padding: 0;
+  margin: 0 3rem;
+  gap: 1em;
+}
+
+nav .loginbtn {
+  font-size: 1.5em;
+}
+
+nav .loginbtn:hover {
+  cursor: pointer;
+}
+
+nav .search_input {
+  border: none;
+  width: 400px;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+}
+
+nav .item .search_input:focus {
+  outline-color: white;
+}
+
+nav .item {
+  text-wrap: wrap;
+  align-self: center;
+  font-family: var(--root-font-family)2;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+nav .home-anim {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 70px;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+nav .home-anim:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: white;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff5e00;
+}
+
+a:active {
+  color: orange;
+}
+
+a:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  color: black;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100svh;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-container {
+  background-image: url(../assets/bg/mountain1.jpg);
+  background-size: cover;
+  filter: brightness(94%);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100svh;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-container .hero-div {
+  width: 70%;
+  height: 70%;
+}
+
+.hero-container h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  text-shadow: -4px 4px rgb(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.hero-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.hero-container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.hero-container .scrolldn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.scrolldnbtn {
+  position: relative;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  z-index: 2;
+  transition: 0.2s;
+}
+
+.scrolldnbtn:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.spnarrow {
+  position: relative;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 3;
+}
+
+
+
+.blog {
+  background-image: url(../assets/bg/field1.jpg);
+  background-size: cover;
+  filter: brightness(94%);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100svh;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern {}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  background-color: var(--card-background-color);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards>.card-item {
+  overflow-wrap: normal;
+  margin: 5rem;
+  width: auto;
+  height: 100%;
+  background-color: var(--card-item-background-color);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  background-color: var(--footer-background-color);
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
