@@ -1,6 +1,0 @@
-# Environment variables
-.env
-
-# IDE specific files
-.idea/
-.vscode/
