@@ -80,6 +80,8 @@
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --custom-link-color: #E63946;
+  --custom-item-hover-color: rgba(230, 57, 70, 0.8);
 }
 
 *,
@@ -10120,13 +10122,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #fd7e14;
+  color: var(--custom-link-color);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #fd7e14;
+  color: var(--custom-link-color);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10222,9 +10224,10 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(253, 126, 20, 0.8);
+  background-color: var(--custom-item-hover-color);
 }
 .exp .exp-item .exp-item-caption:hover {
+  color: white;
   opacity: 1;
 }
 .exp .exp-item .exp-item-caption .exp-item-caption-content {
