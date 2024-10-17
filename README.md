@@ -1,6 +1,6 @@
 ## 💎 Allan Oguis
 
-`Developer | White Hat SEO | Blender Enthusiast`
+`Web Developer | SEO Specialist | Design Enthusiast`
 
 ### Hacktoberfest Participation 2024
 
