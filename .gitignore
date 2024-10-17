@@ -7,3 +7,6 @@ vscode/
 
 # js specific files
 
+#workspace
+workspace/
+
