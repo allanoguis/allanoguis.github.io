@@ -10,7 +10,7 @@
 
 [![An image of @allanoguis's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/allanoguis)](https://holopin.io/@allanoguis)
 
-<div class="inline-flex justify-items: center">
+<div class="flex-row justify-items-center">
 <p align="left">
   <a href="https://skillicons.dev">
     <h4>CTRL</h4> <img src="https://skillicons.dev/icons?i=git,github,gitlab,md,notion,discord,vscode" />
