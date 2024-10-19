@@ -10,7 +10,7 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <h2>Ver. CTRL:</h2> <img src="https://skillicons.dev/icons?i=git,github" />
+    <h3>Ver. CTRL</h3> <img src="https://skillicons.dev/icons?i=git,github" />
   </a>
 </p>
 
