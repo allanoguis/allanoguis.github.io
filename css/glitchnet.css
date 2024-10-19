@@ -6,7 +6,7 @@
     --h1-color: #e5ff00;
     --gr-color: red;
     --gb-color: blue;
-    --model-background-image: url(../assets/img/cyberman2.png);
+    --model-background-image: url(/public/img/cyberman2.png);
     --model-width: 100%;
     --model-height: 95vh;
     --model-position: absolute;
@@ -15,8 +15,8 @@
     --model-background-repeat: no-repeat;
     --model-background-position: top center;
     --model-filter: drop-shadow(0 0 70px rgba(0, 0, 0, 1));
-    --model2-background-image: url(../assets/img/cyberman3.png);
-    }
+    --model2-background-image: url(/public/img/cyberman3.png);
+}
 
 body {
     display: flex;
@@ -24,7 +24,7 @@ body {
     align-items: center;
     font-family: var(--body-font-family);
     min-height: 100vh;
-    background-image: url('../assets/bg/bg02.jpg');
+    background-image: url('/public/bg/bg02.jpg');
     background-color: black;
     background-size: contain;
     background-position: center;
@@ -135,13 +135,16 @@ h1 {
         text-shadow: -3px 3px 0 var(--gr-color), 3px -3px 0 var(--gb-color);
         transform: translate(var(--x));
     }
+
     1% {
         text-shadow: 3px -3px 0 var(--gr-color), -3px 3px 0 var(--gb-color);
     }
-    5%{
+
+    5% {
         text-shadow: 8px -8px 0 var(--gr-color), -8px 8px 0 var(--gb-color);
         transform: translate(var(--revx));
     }
+
     6%,
     100% {
         text-shadow: none;
@@ -175,10 +178,10 @@ footer {
     .banner .slider .item {
         opacity: 20% !important;
     }
-    
+
     h1 {
-            margin: 0;
-            padding-left: 0;
-            font-size: 4rem;
-        }
+        margin: 0;
+        padding-left: 0;
+        font-size: 4rem;
     }
+}
