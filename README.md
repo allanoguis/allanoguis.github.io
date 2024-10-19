@@ -6,4 +6,4 @@
 
 [![An image of @allanoguis's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/allanoguis)](https://holopin.io/@allanoguis)
 
-![Github stats 1](https://github-readme-stats.vercel.app/api?username=allanoguis&show_icons=true&theme=merko)
+![Github stats 1](https://github-readme-stats.vercel.app/api?username=allanoguis&hide_border=true&show_icons=true&theme=merko)
