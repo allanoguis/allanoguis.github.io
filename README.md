@@ -1,6 +1,6 @@
-<h1>💎 Allan Oguis</h1>
+<h3>💎 Allan Oguis</h3>
 
-## `Web Developer | SEO Specialist | Design Enthusiast`
+`Web Developer | SEO Specialist | Design Enthusiast`
 
 
 ### Hacktoberfest Participation 2024
