@@ -2,14 +2,7 @@
 .env
 
 # IDE specific files
-idea/
 vscode/
-
-# js specific files
 
 #workspace
 workspace/
-
-
-projects/travel.html
-projects/cardgame.html
