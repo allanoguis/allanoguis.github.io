@@ -8,3 +8,9 @@
 
 ![Github stats 1](https://github-readme-stats.vercel.app/api?username=allanoguis&hide_border=true&show_icons=true&theme=merko) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=allanoguis&theme=merko&hide_border=true&exclude_days=Sun%2CSat)](https://git.io/streak-stats)
 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
+
