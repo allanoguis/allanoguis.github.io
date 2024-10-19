@@ -12,13 +12,19 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <h4>CTRL</h4> <img src="https://skillicons.dev/icons?i=git,github,gitlab,md,notion,discord,vscode" />
+    <h4>CTRL</h4> <img src="https://skillicons.dev/icons?i=git,github,gitlab" />
   </a>
 </p>
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <h4>Dev</h4> <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs," />
+    <h4>Dev</h4> <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs" />
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <h4>Misc</h4> <img src="https://skillicons.dev/icons?i=discord,vscode,notion,md" />
   </a>
 </p>
 
