@@ -24,7 +24,7 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <h4>Design</h4> <img src="https://skillicons.dev/icons?i=ps,ai,sketchup,figma,blender" />
+    <h4>Design</h4> <img src="https://skillicons.dev/icons?i=ps,ai,figma,sketchup,blender" />
   </a>
 </p>
 
