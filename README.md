@@ -12,7 +12,13 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <h3>Ver. CTRL</h3> <img src="https://skillicons.dev/icons?i=git,github" />
+    <h4>Ver. CTRL</h4> <img src="https://skillicons.dev/icons?i=git,github" />
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <h4>Web</h4> <img src="https://skillicons.dev/icons?i=html,CSS,js" />
   </a>
 </p>
 
